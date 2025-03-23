@@ -4,6 +4,8 @@
 
 ## 1. Spring Boot Project Setup and Basic Controller
 - **Problem**: Write a basic Spring Boot application that includes a controller to handle a simple `GET` request and return a string response.
+- [Solution](demo/src/main/java/com/practice/demo/controllers/BasicGet.java)
+- [Solution Github](https://github.com/mahadeokhamgal/spring_boot_practical/blob/main/demo/src/main/java/com/practice/demo/controllers/BasicGet.java)
 
 ## 2. Handling Path Variables and Request Parameters
 - **Problem**: Write a Spring Boot controller to retrieve a `profileId` from a path variable and `name` from a query parameter, and return them in JSON format.
@@ -12,6 +14,8 @@
 
 ## 3. Request Mapping Annotations (GET, POST, PUT, DELETE)
 - **Problem**: Create a Spring Boot controller with endpoints for `GET`, `POST`, `PUT`, and `DELETE` requests. Each endpoint should handle basic operations on a `Person` resource.
+- [Solution](demo/src/main/java/com/practice/demo/controllers/AllCrud.java)
+- [Solution Github](https://github.com/mahadeokhamgal/spring_boot_practical/blob/main/demo/src/main/java/com/practice/demo/controllers/AllCrud.java)
 
 ## 4. Model and View (Spring MVC Model)
 - **Problem**: Create a Spring Boot MVC application that displays a list of users in HTML using Thymeleaf template engine.
