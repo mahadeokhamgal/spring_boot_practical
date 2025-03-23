@@ -1,0 +1,88 @@
+# Spring Boot Interview Topics
+
+25 topics to evaluate the basic to intermediate understanding of a candidate in **Spring Boot** during an interview:
+
+## 1. Spring Boot Project Setup and Basic Controller
+- **Problem**: Write a basic Spring Boot application that includes a controller to handle a simple `GET` request and return a string response.
+
+## 2. Handling Path Variables and Request Parameters
+- **Problem**: Write a Spring Boot controller to retrieve a `profileId` from a path variable and `name` from a query parameter, and return them in JSON format.
+- **Solution**: - [Solution](demo/src/main/java/com/practice/demo/controllers/Profile.java)
+
+## 3. Request Mapping Annotations (GET, POST, PUT, DELETE)
+- **Problem**: Create a Spring Boot controller with endpoints for `GET`, `POST`, `PUT`, and `DELETE` requests. Each endpoint should handle basic operations on a `Person` resource.
+
+## 4. Model and View (Spring MVC Model)
+- **Problem**: Create a Spring Boot MVC application that displays a list of users in HTML using Thymeleaf template engine.
+
+## 5. Error Handling in Spring Boot
+- **Problem**: Implement a global exception handler using `@ControllerAdvice` to handle and return custom error messages for specific exceptions like `ResourceNotFoundException`.
+
+## 6. Spring Boot and REST API Responses
+- **Problem**: Write a Spring Boot controller that returns a list of `Products` in JSON format as the response body for a `GET` request.
+
+## 7. Spring Boot Validation with Annotations
+- **Problem**: Implement input validation for a `User` class using annotations like `@NotNull`, `@Size`, `@Email`, etc., and validate the fields in a `POST` request.
+
+## 8. Custom Spring Boot Properties
+- **Problem**: Create a custom properties file and load configuration values into a Spring Boot application using `@Value` or `@ConfigurationProperties`.
+
+## 9. Spring Boot Autowiring
+- **Problem**: Demonstrate the use of `@Autowired` in Spring Boot by creating a service class and injecting it into a controller to perform a task like sending an email.
+
+## 10. Spring Boot Dependency Injection with Constructor Injection
+- **Problem**: Refactor the previous example to use constructor-based dependency injection instead of field-based `@Autowired`.
+
+## 11. Spring Boot JPA (Persistence Layer)
+- **Problem**: Create a Spring Boot application with a simple `User` entity and set up a basic `UserRepository` interface extending `JpaRepository`. Add a method to find users by `email`.
+
+## 12. Spring Boot Data Validation Using `@Valid`
+- **Problem**: Use the `@Valid` annotation with Spring Boot’s JPA entity to ensure that entity objects meet validation criteria when posted to the backend.
+
+## 13. Spring Boot and H2 Database
+- **Problem**: Set up an in-memory H2 database in a Spring Boot application and perform CRUD operations on an entity using Spring Data JPA.
+
+## 14. Custom Spring Boot Filters
+- **Problem**: Implement a custom filter that logs request details such as HTTP method, headers, and URL before forwarding the request to a controller.
+
+## 15. Spring Boot Security – Basic Authentication
+- **Problem**: Configure basic HTTP authentication for a Spring Boot application where only users with a valid username and password can access certain endpoints.
+
+## 16. Spring Boot Security – JWT Authentication
+- **Problem**: Implement JWT authentication in a Spring Boot app where users can log in with credentials and get a JWT token for further requests.
+
+## 17. Spring Boot Asynchronous Processing
+- **Problem**: Demonstrate how to execute a method asynchronously using `@Async` in Spring Boot and return the result after a certain delay.
+
+## 18. Spring Boot Scheduling
+- **Problem**: Implement a scheduled task in a Spring Boot application that runs every 5 minutes and logs a message to the console.
+
+## 19. Spring Boot Profiles (dev, prod, test)
+- **Problem**: Configure different application profiles (`dev`, `test`, `prod`) and load environment-specific configurations for a Spring Boot application.
+
+## 20. Spring Boot Actuator
+- **Problem**: Enable Spring Boot Actuator and expose health and metrics endpoints. Demonstrate how to monitor your application using `/actuator/health`.
+
+## 21. Spring Boot and Swagger Documentation
+- **Problem**: Integrate Swagger into a Spring Boot application and document the API with details about endpoints, parameters, and responses.
+
+## 22. Spring Boot Caching
+- **Problem**: Implement caching in a Spring Boot application using `@Cacheable` and a simple service that returns data from an external source, demonstrating caching behavior.
+
+## 23. Spring Boot Profiles and Conditional Beans
+- **Problem**: Create multiple beans for different profiles in Spring Boot and activate the appropriate beans depending on the profile (`dev`, `test`, `prod`).
+
+## 24. Spring Boot and File Upload
+- **Problem**: Write a Spring Boot controller to handle file uploads. The controller should accept multi-part form data and save the file to a local directory.
+
+## 25. Spring Boot Test – Unit Testing Controllers
+- **Problem**: Write unit tests for a Spring Boot controller using `@WebMvcTest` and `MockMvc` to test the controller's behavior without starting the full application context.
+
+---
+
+### Bonus Topics (Advanced / Intermediate)
+
+- **Spring Boot with Kafka or RabbitMQ**: Setting up a Spring Boot application that sends and receives messages from Kafka or RabbitMQ.
+- **Spring Boot WebSockets**: Create a chat application using WebSockets in Spring Boot.
+- **Spring Boot Reactive Programming**: Demonstrate how to implement reactive programming with `WebFlux` in Spring Boot for non-blocking APIs.
+- **Spring Boot with Microservices**: Set up two Spring Boot applications and demonstrate communication between them using REST or messaging (e.g., RabbitMQ, Kafka).
