@@ -19,12 +19,17 @@
 
 ## 4. Model and View (Spring MVC Model)
 - **Problem**: Create a Spring Boot MVC application that displays a list of users in HTML using Thymeleaf template engine.
+- To do
 
 ## 5. Error Handling in Spring Boot
 - **Problem**: Implement a global exception handler using `@ControllerAdvice` to handle and return custom error messages for specific exceptions like `ResourceNotFoundException`.
+- [Solution](demo/src/main/java/com/practice/demo/controllers/GlobalExceptionHandler.java)
+- [Solution Github](https://github.com/mahadeokhamgal/spring_boot_practical/blob/main/demo/src/main/java/com/practice/demo/controllers/GlobalExceptionHandler.java)
 
 ## 6. Spring Boot and REST API Responses
 - **Problem**: Write a Spring Boot controller that returns a list of `Products` in JSON format as the response body for a `GET` request.
+- [Solution](demo/src/main/java/com/practice/demo/controllers/AllCrud.java)
+- [Solution Github](https://github.com/mahadeokhamgal/spring_boot_practical/blob/main/demo/src/main/java/com/practice/demo/controllers/AllCrud.java)
 
 ## 7. Spring Boot Validation with Annotations
 - **Problem**: Implement input validation for a `User` class using annotations like `@NotNull`, `@Size`, `@Email`, etc., and validate the fields in a `POST` request.
