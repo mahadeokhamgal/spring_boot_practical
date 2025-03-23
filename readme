@@ -7,7 +7,8 @@
 
 ## 2. Handling Path Variables and Request Parameters
 - **Problem**: Write a Spring Boot controller to retrieve a `profileId` from a path variable and `name` from a query parameter, and return them in JSON format.
-- **Solution**: - [Solution](demo/src/main/java/com/practice/demo/controllers/Profile.java)
+- [Solution](demo/src/main/java/com/practice/demo/controllers/Profile.java)
+- [Solution Github](https://github.com/mahadeokhamgal/spring_boot_practical/blob/main/demo/src/main/java/com/practice/demo/controllers/Profile.java)
 
 ## 3. Request Mapping Annotations (GET, POST, PUT, DELETE)
 - **Problem**: Create a Spring Boot controller with endpoints for `GET`, `POST`, `PUT`, and `DELETE` requests. Each endpoint should handle basic operations on a `Person` resource.
